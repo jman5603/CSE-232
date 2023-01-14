@@ -12,19 +12,19 @@ This class should contain member variables that track the name of the player tha
 
 You should have two constructors for this class: one that takes the internal information for the piece (name of the player, type of piece, and pointer to the GameState and the other a copy constructor.  You should NOT have a default constructor.
 
-The GetPlayer() member function should return a string with the name of the player this piece belongs to.
+The ```GetPlayer()``` member function should return a string with the name of the player this piece belongs to.
 
-The GetType() member function should return a string with the type of piece the object represents.
+The ```GetType()``` member function should return a string with the type of piece the object represents.
 
-The GetPower() member function should return an int that indicates how strong this piece is in battle.  A Warrior has a power of 5.  A Scout has a power of 1.  A Wizard has a power equal to the total number of Wizards on that player's team (Wizards can boost each other's power).
+The ```GetPower()``` member function should return an int that indicates how strong this piece is in battle.  A Warrior has a power of 5.  A Scout has a power of 1.  A Wizard has a power equal to the total number of Wizards on that player's team (Wizards can boost each other's power).
 
-The GetSpeed() member function should return an int that indicates how many spaces this piece can move.  A Warrior has a speed of 2.  A Scout has a speed of 8.  A Wizard has a speed of 12 minus the total number of Wizards on enemy teams, to a minimum of 1 (Wizards can travel fast by magic, but are slowed by enemy wizards).
+The ```GetSpeed()``` member function should return an int that indicates how many spaces this piece can move.  A Warrior has a speed of 2.  A Scout has a speed of 8.  A Wizard has a speed of 12 minus the total number of Wizards on enemy teams, to a minimum of 1 (Wizards can travel fast by magic, but are slowed by enemy wizards).
 
 You should implement all 6 comparison operators ('==', '!=', '<', '>', '<=', and '>=').  The ordering of pieces should indicate who would win in a fight.  If one piece has a higher "power" score, that piece wins (and is thus greater than the other).  If there is a tie on power, the piece with the higher "speed" wins.  If there is again a tie, the two pieces are tied (i.e., == should return true.)
 
 You should implement the assignment operator ('='), which may completely change the type, owner, or even associated GameState of a piece.
 
-The class should support the operator<< to write to an ostream. It should print parentheses containing the name of the owning player, the name of the piece, its current power, and its current speed in the following format: (Charles,Scout,1,8)
+The class should support the ```operator<<``` to write to an ostream. It should print parentheses containing the name of the owning player, the name of the piece, its current power, and its current speed in the following format: ```(Charles,Scout,1,8)```
 
 # GameState Class:
 
