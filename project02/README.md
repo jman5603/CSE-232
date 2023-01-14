@@ -1,4 +1,4 @@
-Project Description:
+# Project Description:
 
 In this project, you will be creating a bank account calculator that can process withdraws and deposits, calculate interest, and apply overdraft fees. The program must be implemented in a file called "bank_account.cpp" (and you need to also provide a "bank_account.hpp" header file) and must have a number of functions.
 
