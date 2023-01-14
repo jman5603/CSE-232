@@ -1,1 +1,1 @@
-# CSE232
+This repository contains the source code for projects completed during my CSE 232 - Introduction to Programming in C++ coursework. Project descriptions and specifications are included in the README files for each project.
